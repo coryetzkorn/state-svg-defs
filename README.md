@@ -1,10 +1,10 @@
 # US State SVG defs
 
-The repo includes a few handy things:
+This repo includes a few handy things:
 
 + A single state-svg-defs.svg file, providing easy access to all icons in one simple file.
-+ SVG directory with individual SVG icons. (SVG defs approach recommended, but you could also include files individually).
-+ demo.html showing svgdefs implementation.
++ SVG directory with individual SVG icons. (SVG defs approach recommended, but you could also include files from here individually).
++ Docs showing svgdefs implementation.
 
 
 ## Credit

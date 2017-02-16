@@ -9,6 +9,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+body a {
+  color: #0076FF;
+}
 .icon {
   stroke-width: 0;
   stroke: currentColor;
@@ -33,6 +36,11 @@ h1 {
   float: left;
   width: 50%;
   padding: 2em;
+  color: #222;
+  transition: 500ms color;
+}
+.states__item:hover {
+  color: #0076FF;
 }
 @media screen and (min-width: 800px) {
   header {
