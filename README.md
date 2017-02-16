@@ -1,4 +1,4 @@
-# US State SVG defs
+# US State SVG Defs
 
 This repo includes a few handy things:
 
