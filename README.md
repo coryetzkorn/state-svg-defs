@@ -87,3 +87,6 @@ I simply converted them to the (more modern) svgdefs format.
 Kudos to ProPublica for the original work!
 
 United States territory SVGs from [Wiki Commons](https://commons.wikimedia.org/wiki/File:Blank_USA,_w_territories.svg)
+
+## Contributors
+[coryetzkorn](https://github.com/coryetzkorn), [jomurgel](https://github.com/jomurgel)
