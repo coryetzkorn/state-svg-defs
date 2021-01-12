@@ -20,8 +20,8 @@ Copy the entire contents of `state-svg-defs.svg` and paste it after your documen
 
 or
 
-Copy the contents into a partial and include it after your document's opening `<body>` tag.  
-PHP: `<?php include('partials/state-svg-defs.php'); ?>`  
+Copy the contents into a partial and include it after your document's opening `<body>` tag.
+PHP: `<?php include('partials/state-svg-defs.php'); ?>`
 Rails: `<%= render 'partials/state-svg-defs' %>`
 
 
@@ -82,6 +82,8 @@ For example, if the icon is wrapped in a div with a class of `.state` ...
 Easy!
 
 ## Credit
-The original icons were [designed by ProPublica](https://github.com/propublica/stateface) and provided as an icon font.  
-I simply converted them to the (more modern) svgdefs format.  
+The original icons were [designed by ProPublica](https://github.com/propublica/stateface) and provided as an icon font.
+I simply converted them to the (more modern) svgdefs format.
 Kudos to ProPublica for the original work!
+
+United States territory SVGs from [Wiki Commons](https://commons.wikimedia.org/wiki/File:Blank_USA,_w_territories.svg)
