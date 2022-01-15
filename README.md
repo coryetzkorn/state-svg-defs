@@ -24,7 +24,7 @@ Paste this SVG xlink snippet where the icon should appear:
 </svg>
 ```
 
-If you used a different location for the file, replace `svg` with the path you used. To refernce a state other than Missouri, replace `MO` with the appropriate 2-letter abbreivation. Use `USA` for the full continental United States.
+If you used a different location for the file, replace `svg` with the path you used. To reference a state other than Missouri, replace `MO` with the appropriate 2-letter abbreivation. Use `USA` for the full continental United States.
 
 ### Step 3 - Styling icons
 
