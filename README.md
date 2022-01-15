@@ -4,7 +4,7 @@ This repo includes a few handy things:
 
 + A single state-svg-defs.svg file, providing easy access to all icons in one simple file.
 + SVG directory with individual SVG icons. (SVG defs approach recommended, but you could also include files from here individually).
-+ Docs demonstrating svgdefs implementation.
++ This `readme` demonstrating svgdefs implementation.
 
 ## Demo
 Check out the demo [here](https://coryetzkorn.github.io/state-svg-defs/).
@@ -12,34 +12,23 @@ Check out the demo [here](https://coryetzkorn.github.io/state-svg-defs/).
 ## Usage
 
 ### Step 1 - Including the svgdefs file
-Include the contents of `state-svg-defs.svg` in your HTML file. It needs to be included at the *top* of your document (or at least *before* you reference an icon). I recommend including it directly after the opening `<body>` tag.
+Copy the `state-svg-defs.svg` file into your HTML project, e.g. in an `./svg` folder.
 
-Ways to include:
-
-Copy the entire contents of `state-svg-defs.svg` and paste it after your document's opening `<body>` tag.
-
-or
-
-Copy the contents into a partial and include it after your document's opening `<body>` tag.  
-PHP: `<?php include('partials/state-svg-defs.php'); ?>`  
-Rails: `<%= render 'partials/state-svg-defs' %>`
-
-
-### Step 2 - Referencing the svgdefs file
-
-You've already done the hard part. Using the icons is super easy!
+### Step 2 - Referencing the svgdefs icons
 
 Paste this SVG xlink snippet where the icon should appear:
 
 ```html
-<svg class="icon icon-state-MO">
-  <use xlink:href="#icon-state-MO"></use>
+<svg class="icon state-icon">
+    <use xlink:href="svg/state-svg-defs.svg#icon-state-MO"></use>
 </svg>
 ```
 
+If you used a different location for the file, replace `svg` with the path you used. To reference a state other than Missouri, replace `MO` with the appropriate 2-letter abbreivation. Use `USA` for the full continental United States.
+
 ### Step 3 - Styling icons
 
-For best results, include the following CSS in your main stylesheet:
+Include the following CSS in your main stylesheet:
 
 ```css
 .icon {
@@ -47,38 +36,52 @@ For best results, include the following CSS in your main stylesheet:
   stroke: currentColor;
   fill: currentColor;
 }
+
+.state-icon {
+    display: inline;
+    height: 3rem;
+}
 ```
 
-Now you can style the icons easily by setting the `color` on their parent element.
+### Step 4 - Color-Coding icons
 
-For example, if the icon is wrapped in a div with a class of `.state` ...
+Now you can style an icon easily by setting the `color` on its parent element.
+
+For example, you can make the icon settable to red or blue using the following css:
+
+```css
+.red-state {
+  color: red;
+}
+
+.blue-state {
+  color: blue;
+}
+```
+
+You can apply a hover effect using the following css:
+
+```css
+.red-state:hover {
+  color: pink;
+  transition: 500ms color;
+}
+.blue-state:hover {
+  color: lightblue;
+  transition: 500ms color;
+}
+```
+
+To mark a state icon as a "red state", the icon's parent element is wrapped in a div with the class of `red-state`.
+
 ```html
-<div class="state">
-  <svg class="icon icon-state-MO">
-    <use xlink:href="#icon-state-MO"></use>
+<div class="red-state">
+  <svg class="icon state-icon">
+    <use xlink:href="svg/state-svg-defs.svg#icon-state-MO"></use>
   </svg>
 </div>
 ```
 
-... you could make the icon red using the following css:
-
-```css
-.state {
-  color: red;
-}
-```
-
-... and you could animate the color on hover like this:
-
-```css
-.state {
-  color: red;
-  transition: 500ms color;
-}
-.state:hover {
-  color: pink;
-}
-```
 Easy!
 
 ## Credit
